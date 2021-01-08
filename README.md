@@ -11,6 +11,7 @@
 - Minifies scripts and vendors
 - CSS Optimization/Tree shaking
 - Assets Optimization
+- ES6 and beyond to ES5 Syntax
 
 ## How to push
 
