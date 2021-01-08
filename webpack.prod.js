@@ -29,7 +29,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/views/index.html",
+      template: "./src/views/index.html.ejs",
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
