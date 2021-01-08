@@ -16,28 +16,4 @@
       }
     }
   }
-
-  .socials {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style-type: none;
-    .social {
-      gap: 25px;
-      list-style-type: none;
-
-      &-link {
-        color: white;
-
-        &:hover {
-          .social-icon {
-            color: $primary;
-          }
-        }
-      }
-    }
-  }
 }
