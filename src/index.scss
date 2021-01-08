@@ -9,10 +9,13 @@
 
 // headings
 @import "./styles/heading-2.scss";
+@import "./styles/heading-3.scss";
 @import "./styles/heading-4.scss";
+@import "./styles/heading-5.scss";
 
 // partials
 @import "./styles/hero-section.scss";
+@import "./styles/highlights-section.scss";
 
 * {
   padding: 0;

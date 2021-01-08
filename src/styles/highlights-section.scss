@@ -1,0 +1,14 @@
+.songs {
+  .song {
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background: $gradient-1;
+    }
+  }
+
+  .current-song-active {
+    background: $gradient-1;
+  }
+}
