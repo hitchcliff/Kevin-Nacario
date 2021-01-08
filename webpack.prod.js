@@ -30,7 +30,7 @@ module.exports = merge(common, {
         loader: "url-loader",
         options: {
           limit: 1,
-          name: "[name].[contenthash].[ext]",
+          name: "[name].[ext]",
           outputPath: "assets/favicon",
           publicPath: "assets/favicon",
         },
