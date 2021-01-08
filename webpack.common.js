@@ -12,7 +12,7 @@ module.exports = merge({
         loader: "html-loader",
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.(ico|svg|png|jpg|gif)$/,
         use: {
           loader: "file-loader",
           options: {
