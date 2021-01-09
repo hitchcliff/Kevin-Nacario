@@ -12,6 +12,16 @@ module.exports = merge({
         loader: "html-loader",
       },
       {
+        test: /favicon\.ico$/,
+        loader: "url-loader",
+        options: {
+          limit: 1,
+          name: "[name].[ext]",
+          outputPath: "assets/favicon",
+          publicPath: "assets/favicon",
+        },
+      },
+      {
         test: /\.(svg|png|jpg|gif)$/,
         use: {
           loader: "file-loader",

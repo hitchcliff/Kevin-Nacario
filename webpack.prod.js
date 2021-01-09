@@ -22,7 +22,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
@@ -37,9 +37,13 @@ module.exports = merge(common, {
       },
     }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
-    new PurgeCSSPlugin({
-      paths: glob.sync(path.join(__dirname, "src/**/*.html"), { nodir: true }),
-    }),
+    // new PurgeCSSPlugin({
+    //   paths: glob.sync(path.join(__dirname, "./src/**/*.html"), { nodir: true }),
+    //   whitelistPatterns: [
+    //     path.join(__dirname, "/src/views/home-partials/carousel-section.html"),
+    //     path.join(__dirname, "/src/views/home-partials/merchandise-section.html"),
+    //   ],
+    // }),
     new CleanWebpackPlugin(),
   ],
 });

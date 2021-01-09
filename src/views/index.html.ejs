@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="../../src/assets/favicon/favicon.ico" />
+    <!-- <link rel="icon" href="./assets/favicon/favicon.ico" /> -->
     <meta
       name="Welcome to Phoinix Keyz"
       content="Kevin is a website developer, he spent most of his time developing website. Visit his portfolio to see more about him."
@@ -11,14 +11,26 @@
     <link rel="apple-touch-icon" href="../assets/favicon/android-chrome-192x192.png" />
     <title>Phoinix Keyz</title>
   </head>
-  <body class="container-fluid d-flex flex-column p-0" style="background: #000000">
+  <body
+    id="main-body"
+    class="container-fluid d-flex flex-column p-0"
+    style="background: #000000"
+  >
     <!-- HERO SECTION -->
     <%=require('./home-partials/hero-section.html') %>
+    <div class="position-relative" style="top: -20px; bottom: 0; right: 0">
+      <div
+        class="blur text-light d-none d-lg-block"
+        style="height: 250px; bottom: -180px; left: 190px; width: 100%"
+      >
+        I'm a blur
+      </div>
+    </div>
 
     <!-- HIGHLIGHTS SECTION -->
     <div
-      class="container d-flex flex-lg-row flex-column justify-content-center py-5"
-      style="gap: 70px"
+      class="highlights container d-flex flex-lg-row flex-column justify-content-center py-5"
+      style="gap: 70px; z-index: 1000"
     >
       <%=require('./home-partials/video-section.html') %>
       <%=require('./home-partials/music-section.html') %>
@@ -28,7 +40,7 @@
     <%=require('./home-partials/tour-section.html') %>
 
     <!-- MERCHANDISE SECTION -->
-    <div class="row container-fluid m-auto py-5">
+    <div id="merchandise" class="row container-fluid m-auto py-5">
       <%=require('./home-partials/merchandise-section.html') %>
       <%=require('./home-partials/carousel-section.html') %>
     </div>
