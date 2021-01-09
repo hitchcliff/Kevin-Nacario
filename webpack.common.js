@@ -22,17 +22,6 @@ module.exports = merge({
         },
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[contenthash].[ext]",
-            outputPath: "assets/images",
-            publicPath: "assets/images",
-          },
-        },
-      },
-      {
         test: /\.(woff|woff2|otf|ttf)$/,
         exclude: /node_modules/,
         loader: "url-loader",
