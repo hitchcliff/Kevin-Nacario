@@ -25,16 +25,6 @@ module.exports = merge(common, {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
-      {
-        test: /favicon\.ico$/,
-        loader: "url-loader",
-        options: {
-          limit: 1,
-          name: "[name].[ext]",
-          outputPath: "assets/favicon",
-          publicPath: "assets/favicon",
-        },
-      },
     ],
   },
   plugins: [

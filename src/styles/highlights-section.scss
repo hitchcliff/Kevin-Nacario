@@ -12,3 +12,9 @@
     background: $gradient-1;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .highlights {
+    margin-top: -40vh;
+  }
+}

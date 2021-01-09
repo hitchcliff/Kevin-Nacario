@@ -2,8 +2,9 @@
   class="hero position-relative d-flex flex-column justify-content-center align-items-center w-100 overflow-hidden"
 >
   <div
+    id="hero-image"
     class="position-absolute top-0 left-0 z-0 w-100 h-100 object-cover"
-    style="z-index: 0"
+    style="z-index: 1"
   >
     <img
       style="object-fit: cover"
@@ -13,7 +14,7 @@
     />
   </div>
   <div style="z-index: 10">
-    <h2 class="hero__logo text-uppercase">
+    <h2 id="hero-logo" class="hero__logo text-uppercase">
       Pho<span class="logo--i position-relative">
         <svg
           class="position-absolute"
@@ -30,7 +31,7 @@
         i</span
       >nix Keyz
     </h2>
-    <ul class="socials mt-4">
+    <ul id="hero-social" class="socials mt-1">
       <li class="social">
         <a class="social-link" href="!#">
           <svg
@@ -104,4 +105,6 @@
       </li>
     </ul>
   </div>
+
+  <div class="blur text-light d-block d-lg-none">I'm a blur</div>
 </div>
