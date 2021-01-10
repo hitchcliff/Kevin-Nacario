@@ -40,7 +40,7 @@ export default function HomeParallax() {
       "-=1",
     )
     .from(
-      heroLogo,
+      logo,
       1,
       {
         y: -20,
