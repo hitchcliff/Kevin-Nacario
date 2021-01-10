@@ -24,7 +24,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader?sourceMap"],
       },
       {
         test: /\.(svg|png|jpg|gif|jpe?g)$/,
@@ -32,7 +32,7 @@ module.exports = merge(common, {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[contenthash].[ext]",
+              name: "[name].[ext]",
               outputPath: "assets/images",
               publicPath: "assets/images",
             },
