@@ -7,7 +7,8 @@ export default function HomeParallax() {
 
   let tl = new TimelineLite();
   let tl2 = new TimelineLite();
-  const hero = $("#hero-image");
+  const hero = $("#hero");
+  const heroImage = $("#hero-image");
   const bg = $("#bg-image");
   const logo = $("#hero-logo");
   const social = $("#hero-social");
@@ -41,7 +42,7 @@ export default function HomeParallax() {
   //   hero,
   //   3,
   //   {
-  //     y: -50,
+  //     top: "100px",
   //   },
   //   "-=3",
   // );
