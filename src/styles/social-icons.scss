@@ -4,13 +4,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   list-style-type: none;
   opacity: 1;
   .social {
-    gap: 25px;
     list-style-type: none;
-
+    margin: 0 10px;
     &-link {
       color: white;
 

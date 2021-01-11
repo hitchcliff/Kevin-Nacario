@@ -2,7 +2,7 @@
   id="hero"
   class="hero position-relative d-flex flex-column justify-content-center align-items-center w-100"
   style="
-    background-image: url('./assets/images/bg.jpeg');
+    background-image: url('../src/assets/images/bg.jpeg');
     background-position: right center;
     background-size: cover;
     object-fit: cover;
@@ -12,8 +12,19 @@
 >
   <img class="d-none" src="../../assets/images/bg.jpeg" alt="" />
   <div
+    id="hero-image-mobile"
+    class="position-absolute bottom-0 top-0 h-100 overflow-hidden d-flex d-lg-none d-xl-none"
+  >
+    <img
+      class="w-100"
+      src="../../assets/images/hero.jpg"
+      alt="fire background"
+      style="object-fit: cover"
+    />
+  </div>
+  <div
     id="hero-image"
-    class="position-absolute bottom-0 top-0 h-100 overflow-hidden d-flex"
+    class="position-absolute bottom-0 top-0 h-100 overflow-hidden d-none d-lg-flex d-xl-flex"
     style="z-index: 4"
   >
     <img
@@ -21,7 +32,7 @@
       style="object-fit: cover"
       loading="lazy"
       src="../../../src/assets/images/model-fire.png"
-      alt="fire background"
+      alt="model on fire"
     />
   </div>
   <div style="z-index: 10">
