@@ -9,6 +9,14 @@ body {
   overflow-x: hidden;
 }
 
+span {
+  font-family: "Myriad Regular";
+}
+
+p {
+  font-family: "Myriad Regular";
+}
+
 // vendors
 @import "./styles/bootstrap.scss";
 @import "./styles/carousel-item.scss";

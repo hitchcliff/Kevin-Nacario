@@ -24,7 +24,12 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader?sourceMap"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader?sourceMap",
+        ],
       },
       {
         test: /\.(svg|png|jpg|gif|jpe?g)$/,
@@ -73,9 +78,9 @@ module.exports = merge(common, {
       },
     }),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
-    // new PurgeCSSPlugin({
-    //   paths: glob.sync(path.join(__dirname, "./src/**/*.html"), { nodir: true }),
-    // }),
+    new PurgeCSSPlugin({
+      paths: glob.sync(path.join(__dirname, "./src/views/**/*.html"), { nodir: true }),
+    }),
     new CleanWebpackPlugin(),
   ],
 });
